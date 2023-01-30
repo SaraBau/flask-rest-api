@@ -5,8 +5,9 @@ from datetime import date
 
 #CRUD 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:xxxxxx@xx.xxx.2.xx:xxxx/flaskmysql'
+#app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:xxxxxx@xx.xxx.2.xx:xxxx/flaskmysql'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://mysqluser:beovomysql123@104.237.2.219:5340/flaskmysql'
 
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
